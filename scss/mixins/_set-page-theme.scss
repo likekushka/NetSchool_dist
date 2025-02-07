@@ -1,0 +1,44 @@
+@use "../base/variables" as *;
+
+@mixin set-page-theme($theme-color) {
+    .nav-link.disabled,
+    .net {
+        color: $theme-color;
+    }
+
+    .btn-primary {
+        background-color: $theme-color;
+
+        &:hover {
+            @if $theme-color == $color-orange {
+                background-color: var(--color-green);
+            } @else {
+                background-color: var(--color-orange);
+            }
+        }
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $theme-color;
+
+        &:hover {
+            @if $theme-color == $color-orange {
+                background-color: var(--color-green);
+            } @else {
+                background-color: var(--color-orange);
+            }
+        }
+    }
+
+    .hero {
+        @media screen and (min-width: 1000px) {
+            @if $theme-color == $color-orange {
+                background-image: $hero-orange;
+            } @else if $theme-color == $color-green {
+                background-image: $hero-green;
+            } @else if $theme-color == $color-light-purple {
+                background-image: $hero-purple;
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+@use "../base/variables" as *;
+@use "../mixins/set-page-theme" as *;
+
+.page-main {
+    @include set-page-theme($color-green);
+
+    .hero {
+        @media screen and (min-width: 1000px) {
+            background-image: $hero-index;
+        }
+    }
+}

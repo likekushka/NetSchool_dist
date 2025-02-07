@@ -1,0 +1,79 @@
+$container-sizes: (xs sm md lg xl xxl fluid);
+
+.media {
+    h2 {
+        margin-bottom: 1.75rem;
+    }
+
+    h3 {
+        margin-bottom: 1.25rem;
+    }
+
+    @each $size in $container-sizes {
+        .container-#{$size} {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            grid-template-rows: auto 1fr;
+
+            column-gap: 3.5rem;
+
+            @media screen and (max-width: 800px) {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+
+    &.media_left {
+        @each $size in $container-sizes {
+            .container-#{$size} {
+                grid-template-columns: 1fr auto;
+            }
+        }
+
+        .imgs-container {
+            grid-column: 1;
+        }
+    }
+}
+
+.media__text {
+    max-width: 700px;
+    text-align: justify;
+}
+
+.media_sub-left {
+    position: relative;
+
+    .sub-img {
+        position: absolute;
+        left: -40px;
+    }
+}
+
+.imgs-container {
+    position: relative;
+    grid-row: 1 / 3;
+    grid-column: 2 / 3;
+
+    height: 350px;
+    width: 350px;
+
+    @media screen and (max-width: 1600px) {
+        height: 300px;
+        width: 300px;
+    }
+
+    @media screen and (max-width: 800px) {
+        margin-top: 3.5rem;
+        align-self: center;
+
+        height: 350px;
+        width: 350px;
+    }
+
+    @media screen and (max-width: 400px) {
+        height: 300px;
+        width: 300px;
+    }
+}

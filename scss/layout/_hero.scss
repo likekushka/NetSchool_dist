@@ -1,0 +1,30 @@
+.hero {
+    min-height: 955px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right center;
+
+    @media screen and (max-width: 1400px) {
+        background-position: 150% center;
+    }
+
+    @media screen and (max-width: 1200px) {
+        min-height: 755px;
+    }
+}
+
+.hero__container {
+    padding-top: 200px;
+}
+.hero__title {
+    max-width: 851px;
+    margin-bottom: 1.5rem;
+}
+
+.hero__text {
+    max-width: 536px;
+    margin-bottom: 2.75rem;
+
+    font-size: var(--text-24);
+    line-height: var(--main-text-lh);
+}

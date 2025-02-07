@@ -1,0 +1,15 @@
+.container-xxl {
+    max-width: calc(1430px + 4rem);
+    padding: 85px 2rem;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.tti-container {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr auto;
+    grid-column-gap: 25px;
+}

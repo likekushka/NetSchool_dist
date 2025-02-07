@@ -1,0 +1,86 @@
+$container-sizes: (xs sm md lg xl xxl fluid);
+
+.registration {
+    h2 {
+        margin-bottom: 85px;
+    }
+
+    .sub-img {
+        bottom: -50px;
+        right: -50px;
+    }
+
+    input,
+    .btn {
+        height: 60px;
+        width: 100%;
+    }
+
+    input {
+        font-size: var(--text-18);
+        font-weight: 500;
+        color: var(--color-black);
+
+        &::placeholder {
+            font-size: var(--text-18);
+            color: var(--color-black);
+        }
+    }
+
+    &:not(.bg-color-blue) {
+        input {
+            background-color: var(--color-pale-purple);
+        }
+    }
+}
+
+.registration__form {
+    max-width: 665px;
+    min-width: 600px;
+
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 2rem;
+
+    @media screen and (max-width: 650px) {
+        min-width: 100%;
+    }
+}
+
+.inputs-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+
+    margin-bottom: auto;
+}
+
+.label {
+    color: var(--color-black);
+    line-height: 1.65;
+}
+
+.registration__imgs-container {
+    width: 500px;
+    height: 500px;
+}
+
+@media screen and (max-width: 1300px) {
+    .registration {
+        @each $size in $container-sizes {
+            .container-#{$size} {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+
+    .registration__form {
+        align-self: center;
+    }
+
+    .registration__imgs-container {
+        display: none;
+    }
+}

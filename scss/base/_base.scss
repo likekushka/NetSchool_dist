@@ -1,0 +1,72 @@
+@use "variables" as *;
+
+:root {
+    --color-green: #{$color-green};
+    --color-orange: #{$color-orange};
+    --color-white: #{$color-white};
+    --color-blue: #{$color-blue};
+    --color-black: #{$color-black};
+    --color-light-purple: #{$color-light-purple};
+    --color-purple: #{$color-purple};
+    --color-pale-purple: #{$color-pale-purple};
+    --link-size: #{$link-size};
+    --logo-size: #{$logo-size};
+
+    --h1-size: #{$h1-size};
+    --h2-size: #{$h2-size};
+    --h3-size: #{$h3-size};
+    --h4-size: #{$h4-size};
+    --text-24: #{$text-24};
+    --text-20: #{$text-20};
+    --text-18: #{$text-18};
+    --text-16: #{$text-16};
+
+    --title-lh: #{$title-lh};
+    --main-text-lh: #{$main-text-lh};
+
+    --header-height: #{$header-height};
+
+    font-size: #{$font-size};
+
+    @media screen and (max-width: 1200px) {
+        font-size: 18px;
+    }
+
+    @media screen and (max-width: 600px) {
+        --h1-size: 2.75rem;
+        --h2-size: 2rem;
+    }
+
+    @media screen and (max-width: 400px) {
+        --h1-size: 2.25rem;
+        font-size: 16px;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+    height: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--color-black);
+}
+
+body {
+    font-family: "Mulish", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: #{$main-text-lh};
+    background-color: var(--color-white);
+    color: var(--color-black);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+figure {
+    margin: 0;
+}

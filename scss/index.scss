@@ -1,0 +1,25 @@
+@use "base/_base";
+@use "base/_typography";
+@use "base/_utilities";
+@use "base/_images";
+
+@use "layout/_containers";
+@use "layout/_header";
+@use "layout/_footer";
+@use "layout/_hero";
+
+@use "components/_media";
+@use "components/_cards";
+@use "components/_buttons";
+@use "components/_slider";
+@use "components/_modals";
+@use "components/_project-card";
+@use "components/_registration";
+@use "components/review";
+@use "components/_course-card";
+
+@use "pages/_main";
+@use "pages/_portfolio";
+@use "pages/_team";
+@use "pages/_about";
+@use "pages/_contacts";

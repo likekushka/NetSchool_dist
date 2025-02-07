@@ -1,0 +1,16 @@
+.img {
+    height: 100%;
+    width: auto;
+}
+
+.sub-img {
+    position: absolute;
+    bottom: -30px;
+    right: -40px;
+
+    width: 150px;
+
+    @media screen and (max-width: 1600px) {
+        display: none;
+    }
+}

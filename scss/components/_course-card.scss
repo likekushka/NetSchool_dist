@@ -1,0 +1,21 @@
+.course-card {
+    img {
+        max-width: 270px;
+        max-height: 240px;
+
+        @media screen and (max-width: 1200px) {
+            max-width: 240px;
+            max-height: 213px;
+        }
+    }
+}
+
+.course-card__name {
+    font-size: var(--text-20);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.course-card__img {
+    align-self: center;
+}

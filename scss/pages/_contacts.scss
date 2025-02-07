@@ -1,0 +1,18 @@
+@use "../base/variables" as *;
+@use "../mixins/set-page-theme" as *;
+@use "../mixins/typography" as *;
+
+.page-contacts {
+    @include set-page-theme($color-orange);
+
+    .hero__text {
+        max-width: 700px;
+    }
+}
+
+.contacts__text {
+    @include text-24;
+    & > * + * {
+        margin-top: 1rem;
+    }
+}

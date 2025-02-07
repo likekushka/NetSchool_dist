@@ -1,0 +1,35 @@
+$color-green: #b0ed69;
+$color-orange: #f2c370;
+$color-white: #f7fafe;
+$color-blue: #5d68ed;
+$color-black: #18181c;
+$color-black-rgb: rgb(24, 24, 28);
+$color-light-purple: #c1b9fc;
+$color-purple: #d38bf1;
+$color-pale-purple: #ebecfe;
+
+$link-size: 1rem;
+$logo-size: 1.8rem;
+
+$h1-size: 3.2rem;
+$h2-size: 2.4rem;
+$h3-size: 1.2rem;
+$h4-size: 1rem;
+$text-24: 1.2rem;
+$text-20: 1rem;
+$text-18: 0.9rem;
+$text-16: 0.8rem;
+
+$title-lh: 1.1;
+$main-text-lh: 1.25;
+
+$header-height: 125px;
+
+$font-size: 20px;
+
+$img-path: "../img/";
+
+$hero-index: url("#{$img-path}hero/hero_index.png");
+$hero-green: url("#{$img-path}hero/hero_green.png");
+$hero-orange: url("#{$img-path}hero/hero_orange.png");
+$hero-purple: url("#{$img-path}hero/hero_purple.png");

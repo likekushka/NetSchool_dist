@@ -1,0 +1,50 @@
+@use "mixins/_typography" as *;
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: var(--title-lh);
+    font-weight: bold;
+
+    margin-bottom: 2.75rem;
+}
+
+h4 {
+    margin-bottom: 0;
+}
+
+@for $i from 1 through 4 {
+    h#{$i} {
+        font-size: var(--h#{$i}-size);
+    }
+}
+
+.text-24 {
+    @include text-24;
+}
+
+.text-20 {
+    @include text-20;
+}
+
+.text-18 {
+    @include text-18;
+}
+
+.text-16 {
+    @include text-16;
+}
+
+.lh-med {
+    line-height: 1.45;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
